@@ -9,16 +9,68 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;900&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="styles/main.scss">
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
 	<header class="hero">
 		<div class="container">
 			<p class="hero__text">
-				A festa mais esperada do ano inicia em 10d 12h 20m 15s
+				A festa mais esperada do ano inicia em <span id="contador"></span>
 			</p>
+			<div class="infos-bar">
+				<ul class="infos-bar__infos">
+					<li class="infos-bar__infos__item">
+						<b>Localização</b>
+						Rua das Festas - São Paulo - SP
+					</li>
+					<li class="infos-bar__infos__item">
+						<b>Preço</b>
+						Seu presente é o melhor valor 
+					</li>
+					<li class="infos-bar__infos__item">
+						<b>Quando</b>
+						22/04/2024 ás 19hrs
+					</li>
+				</ul>
+				<a href="#" class="button button--primary">Venha se divertir</a>
+			</div>
 		</div>
 	</header>
-
+	<section class="event event--diversao" >
+		<div class="container" data-aos="fade-right">
+			<div class="event__details">
+				<h2 class="event__details__title">Diversão</h2>
+				<p class="event__details__description">
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia sint quos eligendi architecto officia, beatae pariatur numquam. Delectus officiis ratione ducimus, unde facere, quasi quis facilis, necessitatibus illo corporis consequatur.
+				</p>
+			</div>
+			<img class="event__image" src="./images/bolhas.jpg" alt="">
+		</div>
+	</section>
+	<section class="event event--aventura event--image-left" >
+		<div class="container" data-aos="fade-left">
+			<div class="event__details">
+				<h2 class="event__details__title">Aventura com amigos</h2>
+				<p class="event__details__description">
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia sint quos eligendi architecto officia, beatae pariatur numquam. Delectus officiis ratione ducimus, unde facere, quasi quis facilis, necessitatibus illo corporis consequatur.
+				</p>
+			</div>
+			<img class="event__image" src="./images/amigos.jpg" alt="">
+		</div>
+	</section>
+	<section class="event event--presentes">
+		<div class="container" data-aos="fade-right">
+			<div class="event__details">
+				<h2 class="event__details__title">Presentes</h2>
+				<p class="event__details__description">
+					Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia sint quos eligendi architecto officia, beatae pariatur numquam. Delectus officiis ratione ducimus, unde facere, quasi quis facilis, necessitatibus illo corporis consequatur.
+				</p>
+			</div>
+			<img class="event__image" src="./images/presentes.jpg" alt="">
+		</div>
+	</section>
+	
+	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 	<script src="scripts/main.js"></script>
 </body>
 </html>
